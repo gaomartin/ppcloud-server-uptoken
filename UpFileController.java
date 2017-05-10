@@ -47,8 +47,8 @@ public class UpFileController extends BaseController {
             String result = addVod(name, summary,
                     length, cover_img, ppfeature);
             log.info(result);
-            result = result.replace("up_token","upToken");
-            result = result.replace("channel_web_id","channelWebId");
+            //result = result.replace("up_token","upToken");
+            //result = result.replace("channel_web_id","channelWebId");
 
             response.setHeader("x-forwarded-for", getIPAddress(request));
             response.setContentType("application/json;charset=utf-8");
